@@ -18,12 +18,13 @@ Founded in 2016, Quality Health is a medical insurance company serving thousands
 </ol>
 
 ## Dashboard
-<b>To help the marketing team at Quality Health understand and evaluate the to-date performance of the various marketing campaign categories and to allocate their marketing budget for the year, an interactive [Tableau dashboard](https://public.tableau.com/views/RowHealth_dashboard2/Dashboard44?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link) was developed</b> to deliver insights on the company's key metrics.  The dashboard allows users to filter by a customer's first touch, campaign type, and type of plan, and focuses on KPI reporting for marketing and signup metrics.
+<b>To help the marketing team at Quality Health understand and evaluate the to-date performance of the various marketing campaign categories and to allocate their marketing budget for the year, an interactive <a href="https://public.tableau.com/views/RowHealth_dashboard2/Dashboard44?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link" target="_blank"> Tableau dashboard</a> was developed</b> to deliver insights on the company's key metrics.  The dashboard allows users to filter by a customer's first touch, campaign type, and type of plan, and focuses on KPI reporting for marketing and signup metrics.
+
 ![Marketing and Signup Dashboard](./images/marketing_and_signup_dashboard.png)
 <sub>Marketing and Signup Dashboard</sub>
 
 ## Dataset Structure
-The dataset initially came as an [Excel Workbook](./data/Row%20Health%20Data.xlsx) containing three sheets:
+The dataset initially came as an <a href="./data/Row%20Health%20Data.xlsx" target="_blank">Excel workbook</a> containing three sheets:
 <ul>
     <li>
         <b>Customers</b>
@@ -66,7 +67,8 @@ The dataset initially came as an [Excel Workbook](./data/Row%20Health%20Data.xls
     </li>
 </ul>
 
-The dataset was uploaded to a Google BigQuery database with one table for each sheet, as shown in the ERD below.  SQL queries used to supplement the analysis in Tableau can be found [here](./sql_queries).
+The dataset was uploaded to a Google BigQuery database with one table for each sheet, as shown in the ERD below.  SQL queries used to supplement the analysis in Tableau can be found <a href="./sql_queries" target="_blank">here</a>.
+
 ![database_erd](./images/database_erd.png)
 <sub>Entity relationship diagram (ERD) of Quality Health's marketing data</sub>
 
@@ -196,7 +198,7 @@ In evaluating campaign performance, the analysis focus on the following key metr
 </ul>
 
 ## Summary of Insights
-### Marketing Metrics ([SQL Queries](./sql_queries/marketing_metrics.sql))
+### Marketing Metrics (<a href="./sql_queries/marketing_metrics.sql" target="_blank">SQL Queries</a>)
 <table style="margin-left: auto; margin-right: auto">
     <tr>
         <th></th>
@@ -248,7 +250,7 @@ In evaluating campaign performance, the analysis focus on the following key metr
 
 Despite <b>Health for All</b> having the lowest impressions and one of the more expensive CPCs ($0.05), the campaign <b>had an astonishingly high CTR (36.1%), nearly twice as high as the next best campaign, Benefit Updates (22.2%), and about 4x higher than average</b>.  These results are quite strong considering most campaigns had a CTR between 7-17%.
 
-### Signup Metrics ([SQL Queries](./sql_queries/signup_metrics.sql))
+### Signup Metrics (<a href="./sql_queries/signup_metrics.sql" target="_blank">SQL Queries</a>)
 <table style="margin-left: auto; margin-right: auto">
     <tr>
         <th></th>
@@ -297,7 +299,7 @@ Historically, <b>#HealthyLiving, HealthForAll, and #CoverageMatters are the top 
 ### Claims
 Coming Soon
 
-## Recommendations ([SQL Queries](./sql_queries/recommendations.sql))
+## Recommendations (<a href="./sql_queries/recommendations.sql" target="_blank">SQL Queries</a>)
 
 Based on the insights listed above, the company should consider the following recommendations:
 
