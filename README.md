@@ -3,7 +3,7 @@
 ## Objective and Background
 Founded in 2016, Quality Health is a medical insurance company serving thousands of customers throughout the United States.  They offer four different health insurance plans: bronze, silver, gold, and platinum, each with different premiums and claim coverage rates.  
 
-<b>In 2019, the company launched 57 marketing campaigns spanning twelve categories</b> ranging from wellness tips, affordabillity of their plans, preventative care, and more. <b>This project analyzes the performance of each marketing campaign and how they relate to signups<strike> and subsequent patient claims</strike>.  It also provides recommendations on how to allocate marketing budgets across future campaigns</b> based on two <strike>three</strike> primary objectives:
+<b>In 2019, the company launched 57 ads spanning twelve marketing campaigns</b> ranging from wellness tips, affordabillity of their plans, preventative care, and more. <b>This project analyzes the performance of each campaign and how they relate to signups<strike> and subsequent patient claims</strike>.  It also provides recommendations on how to allocate marketing budgets across future campaigns</b> based on two <strike>three</strike> primary objectives:
 
 <ol>
     <li>
