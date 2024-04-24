@@ -21,7 +21,7 @@ Founded in 2016, Quality Health is a medical insurance company serving thousands
 <b>To help the marketing team at Quality Health understand and evaluate the to-date performance of the various marketing campaign categories and to allocate their marketing budget for the year, an interactive <a href="https://public.tableau.com/views/RowHealth_dashboard2/Dashboard44?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link" target="_blank"> Tableau dashboard</a> was developed</b> to deliver insights on the company's key metrics.  The dashboard allows users to filter by a customer's first touch, campaign type, and type of plan, and focuses on KPI reporting for marketing and signup metrics.
 
 ![Marketing and Signup Dashboard](./images/marketing_and_signup_dashboard.png)
-<sub style="text-align: center">Marketing and Signup Dashboard</sub>
+<sub>Marketing and Signup Dashboard</sub>
 
 ## Dataset Structure
 The dataset initially came as an <a href="./data/Row%20Health%20Data.xlsx" target="_blank">Excel workbook</a> containing three sheets:
@@ -71,7 +71,7 @@ The dataset was uploaded to a Google BigQuery database with one table for each s
 
 ![database_erd](./images/database_erd.png)
 
-<sub style="text-align: center">Entity relationship diagram (ERD) of Quality Health's marketing data</sub>
+<sub>Entity relationship diagram (ERD) of Quality Health's marketing data</sub>
 
 ## Definitions
 
@@ -297,7 +297,7 @@ Interestingly, <b>Family Coverage Plan received 1.11 million impressions but had
 
 Historically, <b>#HealthyLiving, HealthForAll, and #CoverageMatters are the top three campaigns in terms of signups, typically contributing ~70%</b>.  Despite record lows, the proportion of signups in recent months is about the same as always and these campaigns still constitute about 70% of signups.  <b>In close 4th and 5th place are CompareHealthCoverage and TailoredHealthPlans, which bring in ~15% and ~10% of signups</b>, respectively. 
 
-### Claims
+### Claims Insights
 Coming Soon
 
 ## Recommendations (<a href="./sql_queries/recommendations.sql" target="_blank">SQL Queries</a>)
