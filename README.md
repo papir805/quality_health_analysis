@@ -148,7 +148,7 @@ In evaluating campaign performance, the analysis focus on the following key metr
     </li></strike>
 </ul>
 
-## Summary of Insights (<a href="./sql_queries/quality_health_queries.sql" target="_blank">SQL Queries</a>)
+## Summary of Insights (<a href="./quality_health_queries.sql" target="_blank">SQL Queries</a>)
 ### Marketing Metrics 
 <table style="margin-left: auto; margin-right: auto">
     <tr>
