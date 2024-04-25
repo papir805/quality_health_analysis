@@ -23,56 +23,6 @@ Founded in 2016, Quality Health is a medical insurance company serving thousands
 ![Marketing and Signup Dashboard](./images/marketing_and_signup_dashboard.png)
 <sub>Marketing and Signup Dashboard</sub>
 
-## Dataset Structure
-The dataset initially came as an <a href="./data/Row%20Health%20Data.xlsx" target="_blank">Excel workbook</a> containing three sheets:
-<ul>
-    <li>
-        <b>Customers</b>
-        <ul>
-            <li>
-                Table grain: customer_id
-            </li>
-            <li>
-                16,638 unique customers
-            </li>
-        </ul>
-    </li>
-    <li>
-        <b>Claims</b>
-        <ul>
-            <li>
-                Table grain: claim_id
-            </li>
-            <li>
-                49,998 unique claim ids
-            </li>
-            <li>
-                All claims filed between 2019 - 2023
-            </li>
-        </ul>
-    </li>
-    <li>
-        <b>Campaigns</b>
-        <ul>
-            <li>
-                Table grain: campaign_id
-            </li>
-            <li>
-                57 unique campaigns
-            </li>
-            <li>
-                12 campaign categories
-            </li>
-        </ul>
-    </li>
-</ul>
-
-The dataset was uploaded to a Google BigQuery database with one table for each sheet, as shown in the ERD below.  SQL queries used to supplement the analysis in Tableau can be found <a href="./sql_queries" target="_blank">here</a>.
-
-![database_erd](./images/database_erd.png)
-
-<sub>Entity relationship diagram (ERD) of Quality Health's marketing data</sub>
-
 ## Definitions
 
 <ul>
@@ -198,8 +148,8 @@ In evaluating campaign performance, the analysis focus on the following key metr
     </li></strike>
 </ul>
 
-## Summary of Insights
-### Marketing Metrics (<a href="./sql_queries/marketing_metrics.sql" target="_blank">SQL Queries</a>)
+## Summary of Insights (<a href="./sql_queries/quality_health_queries.sql" target="_blank">SQL Queries</a>)
+### Marketing Metrics 
 <table style="margin-left: auto; margin-right: auto">
     <tr>
         <th></th>
@@ -209,21 +159,21 @@ In evaluating campaign performance, the analysis focus on the following key metr
         <th>Impressions</th>
     </tr>
     <tr>
-        <td>Average</td>
+        <td style="text-align: center;">Average</td>
         <td style="text-align: center;">9.46%</td>
         <td style="text-align: center;">$0.04</td>
         <td style="text-align: center;">$0.0087</td>
         <td style="text-align: center;">0.70 million</td>
     </tr>
     <tr>
-        <td>Min</td>
+        <td style="text-align: center;">Min</td>
         <td style="text-align: center;">1.70%</td>
         <td style="text-align: center;">$0.02</td>
         <td style="text-align: center;">$0.0032</td>
         <td style="text-align: center;">0.12 million</td>
     </tr>
     <tr>
-        <td>Max</td>
+        <td style="text-align: center;">Max</td>
         <td style="text-align: center;">36.06%</td>
         <td style="text-align: center;">$0.48</td>
         <td style="text-align: center;">$0.0255</td>
@@ -251,7 +201,7 @@ In evaluating campaign performance, the analysis focus on the following key metr
 
 Despite <b>Health for All</b> having the lowest impressions and one of the more expensive CPCs ($0.05), the campaign <b>had an astonishingly high CTR (36.1%), nearly twice as high as the next best campaign, Benefit Updates (22.2%), and about 4x higher than average</b>.  These results are quite strong considering most campaigns had a CTR between 7-17%.
 
-### Signup Metrics (<a href="./sql_queries/signup_metrics.sql" target="_blank">SQL Queries</a>)
+### Signup Metrics
 <table style="margin-left: auto; margin-right: auto">
     <tr>
         <th></th>
@@ -260,19 +210,19 @@ Despite <b>Health for All</b> having the lowest impressions and one of the more 
         <th>Clicks</th>
     </tr>
     <tr>
-        <td>Average</td>
+        <td style="text-align: center;">Average</td>
         <td style="text-align: center;">2.05%</td>
         <td style="text-align: center;">$2.17</td>
         <td style="text-align: center;">~72,000</td>
     </tr>
     <tr>
-        <td>Min</td>
+        <td style="text-align: center;">Min</td>
         <td style="text-align: center;">0%</td>
         <td style="text-align: center;">$0.57</td>
         <td style="text-align: center;">5,979</td>
     </tr>
     <tr>
-        <td>Max</td>
+        <td style="text-align: center;">Max</td>
         <td style="text-align: center;">8.2%</td>
         <td style="text-align: center;">$124.05</td>
         <td style="text-align: center;">~127,000</td>
@@ -288,7 +238,7 @@ On the other end of the spectrum, <b>Summer Wellness Tips, Affordable Plans, Ben
 
 Interestingly, <b>Family Coverage Plan received 1.11 million impressions but had no clicks or signups</b>.  This could indicate a possible data integrity issue and should be investigated.
 
-#### Signups Over Time
+### Signups Over Time
 <b>When COVID began at the start of 2020, signups resulting from many campaign categories rapidly increased</b>.  The most successful were #CoverageMatters, #HealthyLiving, HealthForAll, and Compare Health Coverage, which experienced roughly 3-5x the number of signups from the previous month.  
 
 <b>Compare Health Coverage was the only campaign to experience continued growth throughout the rest of the year</b>, and signups spiked again in early 2021.  Additionally, <b>the campaign captured the highest number of signups for most months in 2021</b> during a time when other campaigns' signups were stagnating or tapering off.  
@@ -300,19 +250,19 @@ Historically, <b>#HealthyLiving, HealthForAll, and #CoverageMatters are the top 
 ### Claims Insights
 Coming Soon
 
-## Recommendations (<a href="./sql_queries/recommendations.sql" target="_blank">SQL Queries</a>)
+## Recommendations
 
 Based on the insights listed above, the company should consider the following recommendations:
 
 <ul>
             <li>
-                <i>Increase Budget Allocation for Cost-Efficient Campaigns</i>:
+                <i>Increase Budget Allocation for High Performing Campaigns</i>:
                 <ul>
                     <li>
-                        <b>Health For All had a low CPC and the lowest cost per signup, making it one of the most cost efficient campaigns</b>.  Moreover, it had the highest CTR (36.1%) and the highest signup rate (8.2%); evidence that <b>these ads are highly effective at geting those who see them to click and subsequently sign up</b>.  Unfortunately, the campaign suffered from low impressions (0.12 million), and those who don't see the ad won't sign up.  This could be because Health For All only ran four ads whereas most other campaigns ran five or more, but it's also possible that they were positioned on marketing channels with low viewership.  
+                        <b>Health For All was one of the best performing campaigns and its ads are highly effective at generating clicks and signups</b>.  The campaign had the lowest cost per signup ($0.57), the highest CTR (36.1%), and the highest signup rate (8.2%).  Unfortunately, those who don't see its ads won't sign up and the campaign suffered from low impressions (0.12 million).
                     </li>
                     <li>
-                        <b>In the future, the marketing team should consider increasing the budget for this campaign to run more ads and select channels that are likely to reach a larger audience.  If done correctly, this could be the cheapest route to drive signups and create tremendous value</b>.
+                        <b>The marketing team should consider increasing the budget for this campaign.  Run more ads and carefully select channels that are likely to reach larger audiences</b>.
                     </li>
                 </ul>
             </li>
@@ -320,13 +270,13 @@ Based on the insights listed above, the company should consider the following re
                 <i>Leverage High Impressions, Clicks, and Signup Rates</i>:
                 <ul>
                     <li>
-                         <b>Tailored Health Plans' large number of impressions (1.36 million) is a valuable asset, which, if leveraged correctly, has the potential to be a significant driver of future signups</b>.  While the campaign's CTR (6.7%) and signup rate (1.2%) were on the lower side, they're still quite effective at moving large numbers of customers through the marketing funnel when applied on a scale in the millions.
+                         <b>Tailored Health Plans' large number of impressions (1.36 million) is a valuable asset</b>.  Although the campaign had a lower CTR (6.7%) and signup rate (1.2%), it was still effective at moving large numbers of customers through the marketing funnel because so many people viewed these ads.
                     </li>
                     <li>
-                        Although <b>other campaigns had lower impressions, they had higher signup rates, and are similarly effective at converting customers to a purchase during that cruical last part of the marketing funnel</b>.  For instance, #HealthyLiving had the second highest impressions, the most clicks, and the 4th highest signup rate.  Also of note are Compare Health Coverage and #CoverageMatters which had the 2nd and 3rd highest signup rates, respecively.
+                        <b>Other campaigns, like #HealthyLiving, Compare Health Coverage, and #CoverageMatters have high signup rates and are effective at converting customers to a purchase</b>.  #HealthyLiving had the second highest impressions, the most clicks, and the 4th highest signup rate.  Compare Health Coverage and #CoverageMatters had the 2nd and 3rd highest signup rates, respecively.
                     </li>
                     <li>
-                        <b>If these campaigns can be re-tooled to increase their CTR even a little bit, it could reverse the slow decline in signups experienced over the last two years.  The marketing team should consider studying campaigns with high CTR's, such as Health For All, Benefit Updates, Summer Wellness Tips, and adapt any findings to campaigns with high signup rates</b>. 
+                        <b>The marketing team should consider studying campaigns with high CTR's and adapt any findings to these campaigns.  Small increases in their CTR could lead to many new signups</b>. 
                     </li>
                 </ul>
             </li>
@@ -334,8 +284,61 @@ Based on the insights listed above, the company should consider the following re
         <i>Adjust Strategy for or Divert Funds from Underperforming Campaigns</i>:
         <ul>
             <li>
-                <b>Golden Years Security was incredibly cost inefficient</b>.  The campaign had a CPC roughly 12x above average, a cost per signup 60x above average, the lowest CTR, and an extremely low signup rate.  <b>Next steps would be to consult with the business development team to examine whether this market segment is desireable for some reason</b>.  If they're worth targeting, then the marketing team likely needs to adjust their future strategy for this campaign to increase user engagement.  Otherwise, they can divert funds to the other higher performing campaigns mentioned earlier.
+                <b>Golden Years Security was incredibly cost inefficient</b>.  The campaign had a CPC roughly 12x above average, a cost per signup 60x above average, the lowest CTR, and an extremely low signup rate. 
+            </Li> 
+            <li>
+                <b>The marketing team should consult with business development to examine whether this market segment is desireable</b>.  If they're worth targeting, then future campaign strategy needs to adjust to increase user engagement.  Otherwise, funds for these ads can be diverted to higher performing campaigns.
             </li>
         </ul> 
     </li>
 </ul>
+
+## Dataset Structure
+The dataset initially came as an <a href="./data/Row%20Health%20Data.xlsx" target="_blank">Excel workbook</a> containing three sheets:
+<ul>
+    <li>
+        <b>Customers</b>
+        <ul>
+            <li>
+                Table grain: customer_id
+            </li>
+            <li>
+                16,638 unique customers
+            </li>
+        </ul>
+    </li>
+    <li>
+        <b>Claims</b>
+        <ul>
+            <li>
+                Table grain: claim_id
+            </li>
+            <li>
+                49,998 unique claim ids
+            </li>
+            <li>
+                All claims filed between 2019 - 2023
+            </li>
+        </ul>
+    </li>
+    <li>
+        <b>Campaigns</b>
+        <ul>
+            <li>
+                Table grain: campaign_id
+            </li>
+            <li>
+                57 unique campaigns
+            </li>
+            <li>
+                12 campaign categories
+            </li>
+        </ul>
+    </li>
+</ul>
+
+The dataset was uploaded to a Google BigQuery database with one table for each sheet, as shown in the ERD below.  SQL queries used to supplement the analysis in Tableau can be found <a href="./sql_queries" target="_blank">here</a>.
+
+![database_erd](./images/database_erd.png)
+
+<sub>Entity relationship diagram (ERD) of Quality Health's marketing data</sub>
