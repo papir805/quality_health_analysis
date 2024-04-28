@@ -20,7 +20,7 @@ Founded in 2016, Quality Health is a medical insurance company serving thousands
 ## Dashboard
 <b>Two interactive Tableau dashboards were developed to deliver insights into the company's key metrics.  These dashboards help the marketing team understand and evaluate the performance of the various marketing campaign categories to date and allocate their marketing budget for the year</b>.
 
-<b>The <a href="https://public.tableau.com/views/RowHealth_dashboard2/Dashboard44?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link" target="_blank"> first dashboard</a> focuses on KPI reporting for marketing and signup metrics.  The <a href="https://public.tableau.com/views/RowHealth_claims_dashboard/ClaimsDashboard?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link" target="_blank"> second dashboard</a> focuses on claim metrics</b>.
+<b>The <a href="https://public.tableau.com/views/RowHealth_dashboard2/marketing_campaign_dashboard?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" target="_blank"> first dashboard</a> focuses on KPI reporting for marketing and signup metrics.  The <a href="https://public.tableau.com/views/RowHealth_claims_dashboard/ClaimsDashboard?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link" target="_blank"> second dashboard</a> focuses on claim metrics</b>.
 
 ![Marketing and Signup Dashboard](./images/marketing_and_signup_dashboard.png)
 <sub>Marketing and Signup Dashboard</sub>
@@ -319,7 +319,7 @@ Historically, <b>#HealthyLiving, HealthForAll, and #CoverageMatters are the top 
     </tr> -->
 </table>
 
-Claims counts for these four campaigns rose at the pandemic's start in early 2020 and plateaued in mid-2020.  From there, counts remained consistent, except for <b>Compare Health Coverage</b>.  This campaign <b>continued to have more claims filed until peaking in May 2022 at $0.14 million, roughly twice as costly as the next campaign</b>.  Claim counts dropped sharply in the following months, and now all four campaigns see approximately the same number of claims as each other.  
+Claims counts for these four campaigns rose at the pandemic's start in early 2020 and plateaued in mid-2020.  From there, counts remained consistent, except for <b>Compare Health Coverage</b>.  This campaign <b>continued to have more claims filed until peaking in May 2022 at $0.14 million, which was roughly twice as costly as the next campaign</b>.  Claim counts dropped sharply in the following months, and now all four campaigns see approximately the same number of claims as each other.  
 
 Interestingly, <b>Compare Health Coverage has the least claims filed, but the average claim amount was quite high ($410.44), indicating that these customers tend to file much more expensive claims</b>.
 
