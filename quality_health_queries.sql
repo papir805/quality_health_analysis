@@ -63,6 +63,25 @@ LEFT JOIN `RowHealth.campaigns-staging`
 GROUP BY campaign_category
 ORDER BY 2 DESC;
 
+--Q2: What are the yearly signup counts?
+-- Extract year from signup_date and group by year.  Count the number of
+-- customer_ids for each year to identify how many customers signed up
+SELECT EXTRACT(YEAR FROM signup_date) AS year
+     , COUNT(customer_id) AS signup_count
+FROM `rowhealth-419822.RowHealth.customers-staging`
+GROUP BY EXTRACT(YEAR FROM signup_date)
+ORDER BY 1 ASC;
+
+-- CLAIM METRICS
+
+--Q1: What is the average average claim amount and how many claims were made?
+-- Calculate total claim amounts / claim count and round to 2 decimal places
+-- to get the average claim amount
+-- Also count the number of claims made 
+SELECT ROUND(SUM(claim_amount) / COUNT(claim_id), 2) AS avg_claim_amount
+     , COUNT(claim_id) AS claim_count
+FROM `rowhealth-419822.RowHealth.claims-staging`;
+
 -- RECOMMENDATIONS
 
 --Q1: How many ads did each campaign run?
