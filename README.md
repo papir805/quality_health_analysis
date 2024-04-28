@@ -428,7 +428,7 @@ The dataset initially came as an <a href="./data/Row%20Health%20Data.xlsx" targe
     </li>
 </ul>
 
-The dataset was uploaded to a Google BigQuery database with one table for each sheet, as shown in the ERD below.  SQL queries used to supplement the analysis in Tableau can be found <a href="./sql_queries.sql" target="_blank">here</a>.
+The dataset was uploaded to a Google BigQuery database with one table for each sheet, as shown in the ERD below.  SQL queries used to supplement the analysis in Tableau can be found <a href="./quality_health_queries.sql" target="_blank">here</a>.
 
 ![database_erd](./images/database_erd.png)
 
