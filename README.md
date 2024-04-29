@@ -158,10 +158,10 @@ In evaluating campaign performance, the analysis focuses on the following key me
 <table style="margin-left: auto; margin-right: auto">
     <tr>
         <th></th>
-        <th>CTR</th>
-        <th>CPC</th>
-        <th>CPI</th>
-        <th>Impressions</th>
+        <th style="text-align: center;">CTR</th>
+        <th style="text-align: center;">CPC</th>
+        <th style="text-align: center;">CPI</th>
+        <th style="text-align: center;">Impressions</th>
     </tr>
     <tr>
         <td style="text-align: center;">Average</td>
@@ -210,9 +210,9 @@ Despite <b>Health for All</b> having the lowest impressions and one of the more 
 <table style="margin-left: auto; margin-right: auto">
     <tr>
         <th></th>
-        <th>Signup Rate</th>
-        <th>Cost Per Signup</th>
-        <th>Clicks</th>
+        <th style="text-align: center;">Signup Rate</th>
+        <th style="text-align: center;">Cost Per Signup</th>
+        <th style="text-align: center;">Clicks</th>
     </tr>
     <tr>
         <td style="text-align: center;">Average</td>
