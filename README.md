@@ -29,10 +29,7 @@ Founded in 2016, Quality Health is a medical insurance company serving thousands
 <sub>Claims Dashboard</sub>
 
 ## Definitions
-
-<ul>
-    <li>
-        <b>Campaign Category</b>: Each ad in the campaign belongs to one of twelve broad categories tailored towards attracting customers from different market segments to sign up for a Quality Health Plan:
+<b>Campaign Category</b>: Each ad in the campaign belongs to one of twelve broad categories tailored towards attracting customers from different market segments to sign up for a Quality Health Plan:
         <ol>
             <li>
                 #CoverageMatters
@@ -71,8 +68,6 @@ Founded in 2016, Quality Health is a medical insurance company serving thousands
                 Tailored Health Plans
             </li>
         </ol> 
-    </li>
-</ul>
 
 Each campaign measures data on the following:
 <ul>
